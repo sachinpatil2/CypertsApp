@@ -12,3 +12,6 @@ Assuming your mongodb is running on "mongodb://localhost:27017/" if you are not 
 From CypertsServer folder. run "npm start" from cmd prompt. Assuming server is running on "localhost:8081/"
 
 From Project root folder: run "npm start" from cmd prompt. after complete installation, assuming application is running on "http://localhost:8000"
+
+make sure you have entered your valid gmail credentails in controllers/nodemail.js and controllers/controller.js.
+

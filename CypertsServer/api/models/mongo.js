@@ -39,34 +39,3 @@ module.exports.findUser = function(db, emailId, callback) {
   });
 };
 
-
-//for updating data to collection
-module.exports.updateUser = function(db, user, callback) {
-
-  user._id = new ObjectID( user._id );
-  console.log("in mongo update user",user);
-   db.collection('userList').updateOne(
-      { _id : user._id },
-      {
-        $set: user
-      }, function(err, results) {
-        if(err)
-          console.log(err);
-      console.log("result: ",results);
-      callback(results);
-   });
-};
-
-//for removing one document from collection
-module.exports.deleteUser = function(db, id, callback) {
-   db.collection('userList').deleteOne(
-      {
-        _id : new ObjectID( id )
-      },
-      function(err, obj) {
-        if (err) throw err;
-        console.log("1 document deleted");
-        callback(err,obj);
-  }
-   );
-};

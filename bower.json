@@ -1,0 +1,21 @@
+{
+  "name": "cypertsApp",
+  "description": "assignment by cypertsApp",
+  "authors": [
+    "sachin patil"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^1.0.5",
+    "angular-route": "^1.6.5",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>LOGIN</title>
+        <meta name="description" content="">
+
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  .btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #16b162;
+    border-color: #16b162;
+    padding-bottom: 20px;
+}
+  </style>
+</head>
+		  <link rel="stylesheet" href="assets/css/style.css">
+	</head>
+		<!--------------------------------head complete----------------------------------------------->
+
+		<!-------------------------------------body ---------------------------------------------------->
+	<body>
+    <form role="form" name="regiForm" ng-submit="login()" novalidate>
+       <fieldset>
+			<div class="login">
+				<div class="container">
+				<br><br/><br>
+
+						<div class="row">
+
+						<div class="col-lg-8 col-md-8 banner"style="background:url(assets/images/bg2.png);padding-bottom:353px;margin-left:-22px;" >
+							<div class="banners">
+								<div class="login-info">
+									<h2> A step towards </h2>
+									<h1>Fitter <span style="color:#676767;">& </span>Happier Workplace</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 log-form">
+							<div class="login-form">
+									<div class="logo">
+										<img src="assets/images/WIN-.png" class="img-responsive" style="margin-left:0px;">
+									</div>
+									<div class="row">
+									<div class="col-md-12">
+									<div class="form-group">
+										<div class="icon-addon addon-lg">
+											<a href="#"><image src="assets/images/user.png" style="margin-left:-350px;margin-top:15px;border-right: 1px solid #ddd;
+    padding-right: 8px;"></a>
+    <input type="email" placeholder="Email" required  name="emailId" ng-pattern="/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/" ng-maxlength="50"
+        class="form-control" ng-model="user.email">
+
+										</div>
+									</div></div></div>
+									<div class="row">
+									<div class="col-md-12">
+									<div class="form-group">
+										<div class="icon-addon addon-lg">
+											<a href="#"><image src="assets/images/lock.png" style="margin-left:-350px;margin-top:15px;border-right: 1px solid #ddd;
+    padding-right: 8px;"></a>
+
+                       <input type="password" placeholder="Passwords" required name="password" class="form-control" data-ng-model="user.password">
+										</div>
+										</div>
+										</div>
+									</div>
+									<div class="row">
+									<div class="col-md-6">
+									<div class="form-group">
+										<div class="icon-addon addon-lg">
+											 <label>
+                                     	<div class="btn-group" data-toggle="buttons">
+
+			<label class="btn btn-success active" style="    padding-bottom: 20px;">
+				<input type="checkbox" autocomplete="off" checked>
+				<span class="glyphicon glyphicon-ok" style="margin-top: -12px;
+    margin-left: -9px;
+    color: #fff;"></span>
+			</label>
+
+
+
+
+		</div> Remember login
+                                  </label>
+
+										</div>
+										</div>
+										</div>
+							<div class="col-md-6">
+								<div class="forgot">
+
+									<p><a href="#" style="float:right;color:#60cdee;font-weight:bold;">Forgot Password?</a></p>
+
+								</div>
+							</div>
+									</div>
+									<div class="submit" >
+										   <button type="submit" class="btn btn-success " style="border-radius:18px;padding:12px 12px;width:100%;background:#11b4e5;border:1px solid #11b4e5;">LOGIN</button>
+										   <p style="text-align:center;margin-top:3px;"><span style="color:#676767;">Not Registered? </span><a ui-sref="register" style="color:#60cdee;">Create an account</a></p>
+									</div>
+							</div>
+
+
+					</div>
+						</div>
+						</div>
+
+				</div>
+        </fieldset>
+      </form>
+
+			</div>
+	</body>
+</html>

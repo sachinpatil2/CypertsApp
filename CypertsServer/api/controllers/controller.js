@@ -46,8 +46,8 @@ app.post('/registerUser', function (req, res) {
    sess.otp = otpCode;
    console.log('session',sess);
    var mailOptions = {
-     from: 'sachinpatildhotri@gmail.com',
-     to: 'sachinpatildhotri@gmail.com',
+     from: '<from_emailid>',
+     to: '<to_emailid>',
      subject: 'OTP',
      text: 'OTP is'+ otpCode
    };
